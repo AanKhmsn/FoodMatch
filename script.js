@@ -1168,7 +1168,7 @@ function loadFavorites() {
                   .map(
                     (recipe) => `
                     <div class="recipe-card" onclick="showFavoriteRecipe('${recipe.name}')">
-                        <img src="...img/logo food match.jpg" alt="${recipe.name}">
+                        <img src=".img/logo food match.jpg" alt="${recipe.name}">
                         <div class="recipe-info">
                             <h4>${recipe.name}</h4>
                             <p>${recipe.time} menit • ${recipe.difficulty}</p>
@@ -1551,6 +1551,7 @@ function showToast(message) {
     toast.remove();
   }, 3000);
 }
+
 
 
 
