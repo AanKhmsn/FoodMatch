@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Match-Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <div class="logo">
+          <img src="/img/logo food match.jpg" alt="logo food match" />
+          <h1>Food Match</h1>
+          <p>Masak Mudah untuk Semua</p>
+        </div>
+
+        <div class="form-container">
+          <div class="tabs">
+            <div class="tab active" id="loginTab">Masuk</div>
+            <div class="tab" id="registerTab">Daftar</div>
+          </div>
+
+          <!-- Login Form -->
+          <div class="form active" id="loginForm">
+            <form id="login">
+              <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input
+                  id="loginUsername"
+                  type="text"
+                  placeholder="Username atau Email"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input
+                  id="loginPassword"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="remember-forgot">
+                <label><input type="checkbox" /> Ingat saya</label>
+                <a href="#">Lupa password?</a>
+              </div>
+              <button type="submit" class="btn">Masuk</button>
+            </form>
+          </div>
+
+          <!-- Register Form -->
+          <div class="form" id="registerForm">
+            <form id="register">
+              <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input
+                  id="registerfullname"
+                  type="text"
+                  placeholder="Nama Lengkap"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input
+                  id="registerEmail"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-user-tag"></i>
+                <input
+                  id="registerUsername"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input
+                  id="registerPassword"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input
+                  id="registerPasswordConfirm"
+                  type="password"
+                  placeholder="Konfirmasi Password"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn">Daftar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
